@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML-form</title>
+</head>
+<body>
+    
+    <fieldset class="container">
+    <legend>Application</legend>
+    <form action="https://httpbin.org/anything" method="POST">
+        <div class="name">
+        <label for="username">Name:</label> <br>
+        <input type="text" id="username"name="name" required>
+    </div>
+    <div class="age">
+        <label for="age">Age</label> <br>
+        <select name="age" id="age">
+            <option value="18-25">18-25</option>
+            <option value="26-40">26-40</option>
+            <option value="40-60">40-60</option>
+            <option value="60+">60+</option>
+        </select>
+    </div>
+    
+    <div class="email">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="password">
+        <label for="password">Password:</label> <br>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div class="message-box">
+        <label for="message">Hej</label>
+        <textarea name="message" id="message"></textarea>
+    </div>
+        
+        <div class="tech-stack">
+            <h3>Choose your tech stack</h3>
+            
+            <input type="checkbox" value="tech-stack" id="mern-stack">
+            <label for="mern-stack">mern-stack</label>
+            <input type="checkbox" value="tech-stack" id="mean-stack">
+            <label for="mean-stack">mean-stack</label>
+            <input type="checkbox" value="tech-stack" id="lamp-stack">
+            <label for="lamp-stack">lamp-stack</label>
+            </div>
+
+        
+        <div class="remote-work">
+            <h3>Where would you like to work</h3>
+            <input type="radio" value="remote" name="location" id="remote">
+            <label for="remote">Remote</label>
+            
+            <input type="radio" value="inoffice" name="location" id="inoffice">
+            <label for="inoffice">In Office</label>
+            
+            <input type="radio" value="hybrid" name="location" id="hybrid">
+            <label for="hybrid">Hybrid</label>
+        </div>
+        <button type="submit">Skicka</button>    
+    </fieldset>
+    
+</form>
+
+</body>
+</html>
